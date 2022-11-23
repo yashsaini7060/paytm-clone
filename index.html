@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screen: {
+          'sm':'640px',
+          'md':'768px',
+          'lg':'1024px',
+          'xl':'1280px',
+          '2xl':'1536px',
+        },
+        extend: {
+          colors: {
+            lblue: '#00BAF2',
+            dblue: '#0F4A8A',
+            bgcol:'#F5F7FA',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bgcol">
+  <div class="flex h-[3.5rem] xl:h-[5rem] px-5 sm:px-12  xl:px-24 items-center justify-between  shadow-xl bg-white">
+    <div class="xl:hidden">
+      <div class="h-px mb-1 w-5 bg-black"></div>
+      <div class="h-px mb-1 w-5 bg-black"></div>
+      <div class="h-px mb-1 w-5 bg-black"></div>
+    </div>
+    <div>
+      <img src="assets/paytm_logo.png" alt="" class="h-9 sm:h-10 md:h-14 xl:md-16">
+    </div>
+    <div class="hidden xl:flex">
+      <ul class="flex font-[600] text-base xl:text-xl gap-10">
+        <li class="">Paytm for Conusmer</li>
+        <li class="">Paytm for Business</li>
+        <li class="">Investor Relations</li>
+        <li class="">Company</li>
+        <li class="">Career</li>
+      </ul>
+    </div>
+    <button class="flex font-[600] text-xs xl:text-base  xl:pl-4 bg-lblue text-white items-center  pl-2 py-[2px]  gap-2 rounded-full ">Sign In
+      <img src="assets/avtar.svg" alt="" class="pr-[2px] invert-[15%] sepia-[44%] saturate-[3295%] hue-rotate-[50deg] brightness-[93%] contrast-[112%] h-8.5">
+    </button>
+  </div>
+</body>
+</html>
+
+
