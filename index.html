@@ -17,7 +17,7 @@
           md: "768px",
           lg: "1024px",
           xl: "1280px",
-          "2xl": "1536px",
+          '2xl': "1536px",
         },
         fontFamily: {
           pfont: ["Inter,sans-serif"],
@@ -35,6 +35,8 @@
 </head>
 
 <body>
+
+  <!-- NAV BAR -->
   <div class="flex h-[3.5rem] xl:h-[5rem] px-5 sm:px-12 xl:px-24 items-center justify-between shadow-xl bg-white">
     <div class="xl:hidden">
       <div class="h-px mb-1 w-5 bg-black"></div>
@@ -60,30 +62,36 @@
         class="pr-[2px] invert-[15%] sepia-[44%] saturate-[3295%] hue-rotate-[50deg] brightness-[93%] contrast-[112%] h-8.5" />
     </button>
   </div>
+  <!-- NAV BAR END -->
 
   <div>
-    <h6 class="bg-bgcol text-xs py-3 text-center font-semibold sm:text-sm sm:my-4 md:text-base">
+    <h6 class="bg-bgcol text-xs pb-3 text-center font-semibold sm:text-sm sm:my-4 md:text-base">
       No Wallet KYC Required 😊 to pay using UPI on Paytm. Learn more.
     </h6>
   </div>
 
-  <div class="bg-white flex p-4 flex-col justify-center items-center gap-4">
-    <img src="assets/paytm.png" class="w-20" />
-    <h1 class="text-[2rem] text-center font-bold">
-      India's Most-loved Payments App
-    </h1>
-    <p class="text-[1.1rem] text-center">
-      Recharge & pay bills, book flights & movie tickets, open a savings
-      account, invest in stocks & mutual funds, and do a lot more.
-    </p>
-
-    <div>
-      <button
-        class="flex self-start items-center width-[5rem] h-[3rem] px-[1.4rem] bg-black text-white rounded-full gap-2">
-        Downlode Paytm App
-        <img src="assets/apple.png" class="h-5" alt="" />
-        <img src="assets/play.png" class="h-5" alt="" />
-      </button>
+  <div class="flex">
+    <div class="bg-white flex p-4 flex-col justify-center items-center gap-4">
+      <img src="assets/paytm.png" class="w-20" />
+      <h1 class="text-[2rem] text-center font-bold">
+        India's Most-loved Payments App
+      </h1>
+      <p class="text-[1.1rem] text-center">
+        Recharge & pay bills, book flights & movie tickets, open a savings
+        account, invest in stocks & mutual funds, and do a lot more.
+      </p>
+  
+      <div>
+        <button
+          class="flex self-start items-center width-[5rem] h-[3rem] px-[1.4rem] bg-black text-white rounded-full gap-2">
+          Downlode Paytm App
+          <img src="assets/apple.png" class="h-5" alt="" />
+          <img src="assets/play.png" class="h-5" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="hidden lg:block">
+      <img src="./assets/hero.png" alt="" class="h-4/6">
     </div>
   </div>
 
@@ -91,7 +99,7 @@
     <h1 class="text-white text-[2rem] font-bold">
       Recharge & Pay Bills on Paytm.
     </h1>
-    <div class="flex xl:justify-between flex-wrap py-10">
+    <div class="flex xl:justify-between flex-wrap py-10 ">
       <div class="flex-col p-[1rem] rounded-md w-1/2 md:w-1/3 lg:w-1/4 xl:w-[14%]">
         <img class="my-[1.2rem] m-auto w-[4rem]" src="./assets/phone.png" alt="" />
         <h1 class="text-white font-semibold">Recharge</h1>
@@ -164,7 +172,7 @@
   <div class="bg-bgcol p-4 py-[2rem] flex-col text-center">
     <h1 class="text-[2rem] py-[2rem] font-bold">Paytm Payment Instruments</h1>
 
-    <div class="bg-white rounded-xl py-8 px-4 sm:mx-6">
+    <div class="bg-white rounded-xl py-8 px-4 sm:mx-6 md:mx-12">
       <div class="flex justify-center">
         <img src="./assets/payment.png" alt="" class="sm:w-[30rem]" />
       </div>
@@ -194,7 +202,7 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-xl my-[2rem] py-8 px-4 sm:mx-6">
+    <div class="bg-white rounded-xl my-[2rem] py-8 px-4 sm:mx-6 md:mx-12">
       <div class="flex justify-center">
         <img src="./assets/1.png" alt="" class="sm:w-[30rem]" />
       </div>
@@ -222,7 +230,7 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-xl my-[2rem] py-8 px-4 sm:mx-6">
+    <div class="bg-white rounded-xl my-[2rem] py-8 px-4 sm:mx-6 md:mx-12">
       <div class="flex justify-center">
         <img src="./assets/shopping.png" alt="" class="sm:w-[30rem]" />
       </div>
@@ -246,7 +254,7 @@
     </div>
     </div>
 
-    <div class="felx-col sm:mx-6">
+    <div class="felx-col sm:mx-6 md:mx-12">
 
     <div class="bg-white text-left justify-start rounded-xl my-[2rem] py-8 px-4">
       <img src="./assets/hdfc.png" class="w-[12rem]" alt="" />
@@ -276,7 +284,7 @@
     </div>
   </div>
 
-  <div class="bg-white p-4 py-[2rem] flex-col sm:mx-6">
+  <div class="bg-white p-4 py-[2rem] flex-col sm:mx-6 md:mx-12">
     <h1 class="text-[2rem] py-[2rem] font-bold">
       Financial Services by Paytm
     </h1>
@@ -299,7 +307,7 @@
     </div>
   </div>
 
-  <div class=" bg-cover bg-[url('./assets/gray-spike.webp')]  p-4 py-[2rem] flex-col sm:mx-6">
+  <div class=" bg-cover bg-[url('./assets/gray-spike.webp')]  p-4 py-[2rem] flex-col sm:mx-6 md:mx-0 md:px-12">
     <div class="flex justify-center">
       <img src="./assets/3.png" class="px-4 my-5 sm:w-[30rem]" alt="" />
     </div>
@@ -319,7 +327,7 @@
     </div>
   </div>
 
-  <div class="bg-white p-4 py-[2rem] flex-col sm:mx-6">
+  <div class="bg-white p-4 py-[2rem] flex-col sm:mx-6 md:mx-12">
     <div class="flex justify-center">
       <img src="./assets/44.webp" class="px-4 my-5 sm:w-[30rem]" alt="" />
     </div>
@@ -337,7 +345,7 @@
     </div>
   </div>
 
-  <div class="bg-bgcol p-4 py-[2rem] flex-col sm:px-6">
+  <div class="bg-bgcol p-4 py-[2rem] flex-col sm:px-6  md:px-12">
     <div class="flex justify-center">
       <img src="./assets/4.png" class="px-4 my-5 sm:w-[30rem]" alt="" />
     </div>
@@ -356,12 +364,12 @@
     </div>
   </div>
 
-  <div class="bg-white p-4 py-[2rem] flex-col">
+  <div class="bg-white p-4 py-[2rem] flex-col sm:mx-6 md:mx-12">
     <h1 class="text-[2rem] py-[2rem] font-bold">
       Business Services by Paytm
     </h1>
 
-    <div class="bg-bgcol rounded-xl py-8 px-4 sm:mx-6">
+    <div class="bg-bgcol rounded-xl py-8 px-4 sm:mx-6 md:mx-12">
       <div class="flex justify-center">
         <img src="./assets/5.png" alt="" class="sm:w-[30rem]" />
       </div>
@@ -379,7 +387,7 @@
       </div>
     </div>
 
-    <div class="bg-bgcol rounded-xl my-[2rem] py-8 px-4 sm:mx-6">
+    <div class="bg-bgcol rounded-xl my-[2rem] py-8 px-4 sm:mx-6 md:mx-12">
       <div class="flex justify-center">
         <img src="./assets/6.png" alt="" class="sm:w-[30rem]" />
       </div>
@@ -399,7 +407,7 @@
     </div>
   </div>
 
-  <div class="my-[2rem] px-4 sm:mx-6">
+  <div class="my-[2rem] px-4 sm:mx-6 md:mx-12">
     <h1 class="text-2xl font-bold my-5">
       Business Tools to help your business grow
     </h1>
@@ -437,7 +445,7 @@
     </div>
   </div>
 
-  <div class="flex-col flex-wrap sm:mx-6">
+  <div class="flex-col flex-wrap sm:mx-6 md:mx-12">
     <div class="flex-col p-[1rem]">
       <img src="./assets/paytm_money.png" alt="" class="my-[1.2rem] w-[10rem]" />
       <p class="font-medium my-[1.2rem]">
@@ -445,27 +453,27 @@
         hidden charges.
       </p>
       <a href="" class="text-lblue text-lg font-semibold">Learn More</a>
-    </div>
-    <div class="flex flex-wrap justify-center px-4 sm:px-[8rem]">
-      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%]">
+    </div> 
+    <div class="flex flex-wrap justify-center px-4 sm:justify-start sm:px-[2rem] md:px-[0rem]">
+      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] sm:w-[31.6%] md:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img   src="./assets/bull.png" alt="" />
         <h1 class="text-white text-xl font-semibold my-1">
           Invest in Stocks
         </h1>
       </div>
-      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%]">
+      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] sm:w-[31.6%] md:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="" src="./assets/ipo.png" alt="" />
         <h1 class="text-white text-xl font-semibold my-1">Apply for IPO</h1>
       </div>
-      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%]">
+      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] sm:w-[31.6%] md:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="" src="./assets/etfs.png" alt="" />
         <h1 class="text-white text-xl font-semibold my-1">Invest in ETFs</h1>
       </div>
-      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%]">
+      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] sm:w-[31.6%] md:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="" src="./assets/gold.png" alt="" />
         <h1 class="text-white text-xl font-semibold my-1">Buy Gold</h1>
       </div>
-      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%]">
+      <div class="flex-col text-center bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] sm:w-[31.6%] md:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="" src="./assets/mutual_funds.png" alt="" />
         <h1 class="text-white text-xl font-semibold my-1">
           Invest in Mutual Funds
@@ -474,7 +482,7 @@
     </div>
   </div>
 
-  <div class="flex-col flex-wrap py-10 sm:mx-6">
+  <div class="flex-col flex-wrap py-10 sm:mx-6 md:mx-12">
     <div class="flex-col p-[1rem]">
       <img src="./assets/travel.png" alt="" class="my-[1.2rem] w-[10rem]" />
       <p class="font-medium my-[1.2rem]">
@@ -483,8 +491,8 @@
       </p>
       <a href="" class="text-lblue text-lg font-semibold">Learn More</a>
     </div>
-    <div class="flex flex-wrap justify-center sm:p-[5rem] md:p-[4rem]">
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+    <div class="flex flex-wrap justify-center  md:justify-start sm:p-[5rem] md:p-[0rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/fly.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">Flat 14% Cashback</h1>
         <p class="text-white text-sm font-bold my-1">
@@ -492,34 +500,34 @@
           WELCOMEFLIGHT
         </p>
       </div>
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/tickets.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">100% Refund</h1>
         <p class="text-white text-sm font-bold my-1">
           With Paytm's<br />Cancellation Protec
         </p>
       </div>
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/buss.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">Flat 10% Cashback</h1>
         <p class="text-white text-sm font-bold my-1">
           With Code <br />Cancellation Protect
         </p>
       </div>
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/med.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">
           Sanitised Bus Options With <br />
           TravelSafe+
         </h1>
       </div>
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/trainn.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">
           Hassle Free Train Ticket Bookings
         </h1>
       </div>
-      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem]">
+      <div class="flex-col bg-lblue m-1 p-[0.4rem] rounded-md w-[47.5%] h-[15rem] md:w-[31.6%] lg:w-[23.75%] xl:w-[19%] 2xl:w-[15.8%]">
         <img class="w-20 my-5 mx-1" src="./assets/pnr.png" alt="" />
         <h1 class="text-white text-xl font-bold my-1">
           PNR Status Check In Few Simple Clicks
